@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA01DB5F2CD25CF1001F29B2 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01DB5E2CD25CF1001F29B2 /* FoodViewController.swift */; };
+		BA01DB612CD25E2B001F29B2 /* CrazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01DB602CD25E2B001F29B2 /* CrazyCell.swift */; };
 		BAA55BBA2CD10B9C00208B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA55BB92CD10B9C00208B5D /* AppDelegate.swift */; };
 		BAA55BBC2CD10B9C00208B5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA55BBB2CD10B9C00208B5D /* SceneDelegate.swift */; };
 		BAA55BBE2CD10B9C00208B5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA55BBD2CD10B9C00208B5D /* ViewController.swift */; };
@@ -14,9 +16,12 @@
 		BAA55BC42CD10B9C00208B5D /* UsefulAppGough.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAA55BC22CD10B9C00208B5D /* UsefulAppGough.xcdatamodeld */; };
 		BAA55BC62CD10B9E00208B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA55BC52CD10B9E00208B5D /* Assets.xcassets */; };
 		BAA55BC92CD10B9E00208B5D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BAA55BC82CD10B9E00208B5D /* Base */; };
+		BAA55BD12CD10D3100208B5D /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA55BD02CD10D3100208B5D /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA01DB5E2CD25CF1001F29B2 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		BA01DB602CD25E2B001F29B2 /* CrazyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyCell.swift; sourceTree = "<group>"; };
 		BAA55BB62CD10B9C00208B5D /* UsefulAppGough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsefulAppGough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA55BB92CD10B9C00208B5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA55BBB2CD10B9C00208B5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		BAA55BC52CD10B9E00208B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA55BC82CD10B9E00208B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA55BCA2CD10B9E00208B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA55BD02CD10D3100208B5D /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 		BAA55BAD2CD10B9C00208B5D = {
 			isa = PBXGroup;
 			children = (
+				BA01DB602CD25E2B001F29B2 /* CrazyCell.swift */,
+				BA01DB5E2CD25CF1001F29B2 /* FoodViewController.swift */,
 				BAA55BB82CD10B9C00208B5D /* UsefulAppGough */,
 				BAA55BB72CD10B9C00208B5D /* Products */,
 			);
@@ -62,6 +70,7 @@
 				BAA55BBB2CD10B9C00208B5D /* SceneDelegate.swift */,
 				BAA55BBD2CD10B9C00208B5D /* ViewController.swift */,
 				BAA55BBF2CD10B9C00208B5D /* Main.storyboard */,
+				BAA55BD02CD10D3100208B5D /* Food.swift */,
 				BAA55BC52CD10B9E00208B5D /* Assets.xcassets */,
 				BAA55BC72CD10B9E00208B5D /* LaunchScreen.storyboard */,
 				BAA55BCA2CD10B9E00208B5D /* Info.plist */,
@@ -143,7 +152,10 @@
 			files = (
 				BAA55BBE2CD10B9C00208B5D /* ViewController.swift in Sources */,
 				BAA55BBA2CD10B9C00208B5D /* AppDelegate.swift in Sources */,
+				BAA55BD12CD10D3100208B5D /* Food.swift in Sources */,
+				BA01DB612CD25E2B001F29B2 /* CrazyCell.swift in Sources */,
 				BAA55BC42CD10B9C00208B5D /* UsefulAppGough.xcdatamodeld in Sources */,
+				BA01DB5F2CD25CF1001F29B2 /* FoodViewController.swift in Sources */,
 				BAA55BBC2CD10B9C00208B5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
