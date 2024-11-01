@@ -38,6 +38,11 @@ class ViewController: UIViewController {
         var car = Int(carbsText.text!) ?? 0
         var sug = Int(sugarText.text!) ?? 0
         var amo = Int(amountText.text!) ?? 0
+        if (amo > 1){
+            cal = cal * amo
+            car = car * amo
+            sug = sug * amo
+        }
         var blah = Food(name: foo, amount: amo, calories: cal, sugars: sug, carbs: car)
         AppData.foods.append(blah)
     }

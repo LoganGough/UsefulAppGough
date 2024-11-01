@@ -28,12 +28,12 @@ class FoodViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! CrazyCell
-        cell.nameLab?.text = AppData.foods[indexPath.row].name
-//        cell.amountLab?.text = AppData.foods[indexPath.row].amount
-//        cell.calorieLab?.text = AppData.foods[indexPath.row].calories
-//        cell.carbLab?.text = AppData.foods[indexPath.row].carbs
-//        cell.sugarLab?.text = AppData.foods[indexPath.row].sugars
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! CrazyCell2
+        cell.configure(food: AppData.foods[indexPath.row])
+        
+        
+        
+       
         return cell
     }
 
