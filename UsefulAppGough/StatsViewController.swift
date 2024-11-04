@@ -9,11 +9,13 @@ import UIKit
 
 class StatsViewController: UIViewController {
 
-    @IBOutlet weak var heightText: UITextField!
+    @IBOutlet weak var calorieText: UITextField!
     
-    @IBOutlet weak var weightText: UITextField!
+    @IBOutlet weak var carbText: UITextField!
     
-    @IBOutlet weak var ageText: UITextField!
+    
+    @IBOutlet weak var sugarText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,17 @@ class StatsViewController: UIViewController {
     }
     
 
+    @IBAction func button1(_ sender: UIButton) {
+        var one = Int(calorieText.text!) ?? 0
+        var two = Int(carbText.text!) ?? 0
+        var three = Int(sugarText.text!) ?? 0
+        AppData.maxCalories = one
+        AppData.maxCarbs = two
+        AppData.maxSugars = three
+        print(AppData.maxCalories)
+        print(AppData.maxCarbs)
+        print(AppData.maxSugars)
+    }
     
 
 }

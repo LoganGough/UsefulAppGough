@@ -8,7 +8,9 @@
 
 class AppData{
     static var foods = [Food]()
-    
+    static var maxCalories = 0
+    static var maxCarbs = 0
+    static var maxSugars = 0
     
 }
 import UIKit

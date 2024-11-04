@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA01DB5F2CD25CF1001F29B2 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01DB5E2CD25CF1001F29B2 /* FoodViewController.swift */; };
 		BA01DB612CD25E2B001F29B2 /* CrazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01DB602CD25E2B001F29B2 /* CrazyCell.swift */; };
+		BA1B03902CD91237008A0B3D /* CalorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B038F2CD91237008A0B3D /* CalorieViewController.swift */; };
 		BA7256EB2CD5038E00D6DF83 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7256EA2CD5038E00D6DF83 /* StatsViewController.swift */; };
 		BA7CBA442CD3B8FE00C8E160 /* CrazyCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7CBA432CD3B8FE00C8E160 /* CrazyCell2.swift */; };
 		BAA55BBA2CD10B9C00208B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA55BB92CD10B9C00208B5D /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		BA01DB5E2CD25CF1001F29B2 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		BA01DB602CD25E2B001F29B2 /* CrazyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyCell.swift; sourceTree = "<group>"; };
+		BA1B038F2CD91237008A0B3D /* CalorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieViewController.swift; sourceTree = "<group>"; };
 		BA7256EA2CD5038E00D6DF83 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		BA7CBA432CD3B8FE00C8E160 /* CrazyCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyCell2.swift; sourceTree = "<group>"; };
 		BAA55BB62CD10B9C00208B5D /* UsefulAppGough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsefulAppGough.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 		BAA55BAD2CD10B9C00208B5D = {
 			isa = PBXGroup;
 			children = (
+				BA1B038F2CD91237008A0B3D /* CalorieViewController.swift */,
 				BAA55BB82CD10B9C00208B5D /* UsefulAppGough */,
 				BAA55BB72CD10B9C00208B5D /* Products */,
 			);
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1B03902CD91237008A0B3D /* CalorieViewController.swift in Sources */,
 				BAA55BBE2CD10B9C00208B5D /* ViewController.swift in Sources */,
 				BAA55BBA2CD10B9C00208B5D /* AppDelegate.swift in Sources */,
 				BAA55BD12CD10D3100208B5D /* Food.swift in Sources */,
