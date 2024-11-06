@@ -11,29 +11,42 @@ class CalorieViewController: UIViewController {
     
     @IBOutlet weak var textViewOutlet: UITextView!
     
-    var calLeft = AppData.maxCalories
-    var carLeft = AppData.maxCarbs
-    var sugLeft = AppData.maxSugars
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+       
         
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
-        var blah = AppData.maxCalories - calLeft
-        var blat = AppData.maxCarbs - carLeft
-        var blay = AppData.maxSugars - sugLeft
+        var calLeft = AppData.maxCalories
+        var carLeft = AppData.maxCarbs
+        var sugLeft = AppData.maxSugars
+        var calCons = 0
+        var carCons = 0
+        var sugCons = 0
+        print(calLeft)
         
         for var i in 0..<AppData.foods.count{
-            calLeft = calLeft - AppData.foods[i].calories
-            carLeft = carLeft - AppData.foods[i].carbs
-            sugLeft = sugLeft - AppData.foods[i].sugars
+            calCons = calCons + AppData.foods[i].calories
+            carCons = carCons + AppData.foods[i].carbs
+            sugCons = sugCons + AppData.foods[i].sugars
         }
-        textViewOutlet.text = "Calories consumed: \(blah)\nCarbs consumed: \(blat)\nSugars consumed: \(blay)\nCalories left: \(calLeft)\nCarbs left: \(carLeft)\nSugars left: \(sugLeft)"
+        var one = calLeft - calCons
+        var two = carLeft - carCons
+        var three = sugLeft - sugCons
+//        print(calLeft)
+//        print(carLeft)
+//        print(sugLeft)
+        print(calCons)
+        print(carCons)
+        print(sugCons)
+
+        textViewOutlet.text = "Calories consumed: \(calCons)\nCarbs consumed: \(carCons)\nSugars consumed: \(sugCons)\nCalories left: \(one)\nCarbs left: \(two)\nSugars left: \(three)"
+        
+   
     }
 }
 

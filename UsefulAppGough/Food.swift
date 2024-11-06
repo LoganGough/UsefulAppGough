@@ -23,6 +23,11 @@ class Food{
         self.carbs = carbs
     }
     
+    func toString()->String{
+        return "Food: \(name)\nAmount: \(amount)\nCalories: \(calories)\nCarbs: \(carbs)\nSugar: \(sugars)"
+        
+    }
+    
     
     
 }

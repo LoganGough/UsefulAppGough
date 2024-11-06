@@ -47,6 +47,9 @@ class ViewController: UIViewController {
         }
         var blah = Food(name: foo, amount: amo, calories: cal, sugars: sug, carbs: car)
         AppData.foods.append(blah)
+        for var i in 0..<AppData.foods.count{
+            print(AppData.foods[i].toString())
+        }
     }
     
 

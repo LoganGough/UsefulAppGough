@@ -30,11 +30,10 @@ class FoodViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! CrazyCell2
         cell.configure(food: AppData.foods[indexPath.row])
-        
-        
-        
-       
         return cell
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        tableViewOutlet.reloadData()
     }
 
    
