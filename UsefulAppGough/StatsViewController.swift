@@ -27,12 +27,20 @@ class StatsViewController: UIViewController {
         var one = Int(calorieText.text!) ?? 0
         var two = Int(carbText.text!) ?? 0
         var three = Int(sugarText.text!) ?? 0
-        AppData.maxCalories = one
-        AppData.maxCarbs = two
-        AppData.maxSugars = three
-        print(AppData.maxCalories)
-        print(AppData.maxCarbs)
-        print(AppData.maxSugars)
+        if(one > 0 && two > 0 && three > 0){
+            AppData.maxCalories = one
+            AppData.maxCarbs = two
+            AppData.maxSugars = three
+            print(AppData.maxCalories)
+            print(AppData.maxCarbs)
+            print(AppData.maxSugars)
+        }
+        else{
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid number", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
     }
     
 

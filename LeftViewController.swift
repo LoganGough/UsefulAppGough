@@ -1,30 +1,25 @@
 //
-//  CalorieViewController.swift
+//  LeftViewController.swift
 //  UsefulAppGough
 //
-//  Created by LOGAN GOUGH on 11/4/24.
+//  Created by LOGAN GOUGH on 11/7/24.
 //
 
 import UIKit
 
-class CalorieViewController: UIViewController {
-    
+class LeftViewController: UIViewController {
+
     @IBOutlet weak var label1: UILabel!
-    
     
     @IBOutlet weak var label2: UILabel!
     
     @IBOutlet weak var label3: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
        
-        
     }
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         var calLeft = AppData.maxCalories
         var carLeft = AppData.maxCarbs
@@ -42,24 +37,12 @@ class CalorieViewController: UIViewController {
         var one = calLeft - calCons
         var two = carLeft - carCons
         var three = sugLeft - sugCons
-//        print(calLeft)
-//        print(carLeft)
-//        print(sugLeft)
-        print(calCons)
-        print(carCons)
-        print(sugCons)
-
-     
-        label1.text = "\(calCons)"
-        label2.text = "\(carCons)"
-        label3.text = "\(sugCons)"
         
         
-        
-   
+        label1.text = "\(one)"
+        label2.text = "\(two)"
+        label3.text = "\(three)"
     }
     
-    
+
 }
-
-
