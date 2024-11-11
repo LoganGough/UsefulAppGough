@@ -43,7 +43,7 @@ class StatsViewController: UIViewController {
             print(AppData.maxSugars)
         }
         else{
-            let alert = UIAlertController(title: "Error", message: "Please enter a valid number", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Please enter a valid answer", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
